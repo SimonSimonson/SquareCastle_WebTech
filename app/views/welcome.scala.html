@@ -1,12 +1,13 @@
-@(message: String, style: String = "scala") 
+@(message: String, style: String = "scala", cont : GameController)
 
 @defining(play.core.PlayVersion.current) { version =>
 
 <div id="content" class="wrapper doc">
 <article>
   <h1>Welcome to SQUARECASTLE</h1>
-
+  <button id="start" onclick= cont.run()></button>
 
 </article>
 </div>
+
 }
